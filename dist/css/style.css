@@ -1,23 +1,233 @@
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold");
+@charset "UTF-8";
+
+/*Обнуление*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;
+
+700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.title_fz14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.title_fz16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.title_fz20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.btn {
+  height: 45px;
+  background: #49516B;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 12px 25px;
+}
+
+.sidepanel {
+  position: absolute;
+  top: 230px;
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 340px;
+  z-index: 3;
+}
+
+.sidepanel__link {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.sidepanel__text {
+  height: 150px;
+  width: 25px;
+}
+
+.sidepanel__text span {
+  display: block;
+  width: 150px;
+  -webkit-transform: rotate(-90deg) translate(-25%, -450%);
+      -ms-transform: rotate(-90deg) translate(-25%, -450%);
+          transform: rotate(-90deg) translate(-25%, -450%);
+}
+
+.sidepanel__divider {
+  height: 70px;
+  width: 2px;
+  background-color: #FFFFFF;
+}
+
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../../img/blocks/promo/bg.jpg") center/cover no-repeat;
+  padding-top: 205px;
+}
+
+.promo__subtitle {
+  position: relative;
+  padding-left: 10px;
+  z-index: 2;
+}
+
+.promo__subtitle:before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #49516B;
+  z-index: -1;
+}
+
+.promo__title {
+  max-width: 560px;
+  margin-top: 10px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.promo__btns {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 248px;
+}
+
+.promo__link {
   font-weight: 700;
-  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular");
-  font-weight: 400;
-  font-style: normal;
+* {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
 }
 
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold");
-  font-weight: 800;
-  font-style: normal;
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
