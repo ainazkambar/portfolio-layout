@@ -7,13 +7,30 @@
 @import "blocks/button.scss";
 @import "blocks/sidepanel.scss";
 @import "blocks/promo.scss";
+@import "blocks/aboutme.scss";
+@import "blocks/experience.scss";
+@import "blocks/tools.scss";
+@import "blocks/portfolio.scss";
+
 
 * {
     font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
+    color: #000000;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: #E5E5E5;
 }
 
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider {
+    height: 3px;
+    width: 60px;
+    margin: 0 auto;
+    background: $main-color;
 }

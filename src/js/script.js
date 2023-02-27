@@ -13,3 +13,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.tools__skills-item-value'),
+    indicators = document.querySelectorAll('.tools__skills-item-indicator');
+
+counters.forEach( (item, i) => {
+    indicators[i].style.width = item.innerHTML;
+});

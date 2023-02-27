@@ -68,6 +68,10 @@
         line-height: 36px;
         margin-bottom: 15px;
 
+        a {
+            color: #FFFFFF;
+        }
+
         &:hover {
             &:before {
                 background-color: #FFFFFF;
@@ -119,6 +123,7 @@
         position: relative;
         padding-left: 10px;
         z-index: 2;
+        color: #FFFFFF;
         @include before_circle;
     }
 
@@ -127,6 +132,7 @@
         margin-top: 10px;
         font-size: 40px;
         line-height: 50px;
+        color: #FFFFFF;
     }
 
     &__btns {
@@ -141,5 +147,6 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
+        color: #FFFFFF;
     }
 }
