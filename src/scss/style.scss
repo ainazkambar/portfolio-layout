@@ -3,24 +3,18 @@
 @import "base/variables.scss";
 @import "base/mixins.scss";
 
-@import "blocks/title.scss";
-@import "blocks/button.scss";
-@import "blocks/sidepanel.scss";
-@import "blocks/promo.scss";
-@import "blocks/aboutme.scss";
-@import "blocks/experience.scss";
-@import "blocks/tools.scss";
-@import "blocks/portfolio.scss";
-
-
 * {
     font-family: 'Poppins', sans-serif;
     color: #000000;
     scroll-behavior: smooth; 
 }
 
+textarea {
+    resize: none;
+}
+
 body {
-    background-color: #E5E5E5;
+    background-color: $bg-color;
 }
 
 .container {
@@ -34,3 +28,14 @@ body {
     margin: 0 auto;
     background: $main-color;
 }
+
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/sidepanel.scss";
+@import "blocks/promo.scss";
+@import "blocks/aboutme.scss";
+@import "blocks/experience.scss";
+@import "blocks/tools.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
