@@ -110,8 +110,10 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .divider {
@@ -557,7 +559,7 @@ body {
 }
 
 .experience__wrapper {
-  padding: 60px 65px 0;
+  padding: 60px 55px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (425px)[2];
@@ -687,6 +689,7 @@ body {
   max-width: 480px;
   width: 100%;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .tools .divider {
@@ -797,6 +800,7 @@ body {
   position: relative;
   max-width: 96px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .portfolio__title:before {
@@ -821,6 +825,7 @@ body {
 .portfolio__subtitle {
   max-width: 230px;
   margin: 0 auto 25px;
+  text-align: center;
 }
 
 .portfolio .divider {
@@ -860,7 +865,8 @@ body {
 }
 
 .portfolio__item img {
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
@@ -1051,13 +1057,12 @@ body {
 .contacts__form textarea {
   background: none;
   border: 1px solid #000000;
-  padding: 20px;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
 }
 
-.contacts__form .contacts__input {
+.contacts__form .contacts__input input {
   width: 100%;
   height: 100%;
 }
@@ -1121,4 +1126,139 @@ body {
 .contacts__input,
 .contacts__textarea {
   position: relative;
+}
+
+@media (max-width: 390px) {
+  .sidepanel {
+    display: none;
+  }
+
+  .promo {
+    background-position: 60% top;
+  }
+
+  .aboutme__title {
+    font-size: 24px;
+  }
+
+  .aboutme .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .aboutme__pic {
+    width: 300px;
+    height: 340px;
+    margin-bottom: 40px;
+  }
+
+  .aboutme__pic img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .experience__wrapper {
+    padding: 40px 0;
+    -ms-grid-columns: 250px;
+    grid-template-columns: 250px;
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+  }
+
+  .experience__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .experience__column-title {
+    font-size: 20px;
+  }
+
+  .tools__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .tools__grid {
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
+    -ms-grid-rows: (270px)[7];
+    grid-template-rows: repeat(7, 270px);
+  }
+
+  .tools__skills {
+    -ms-grid-columns: 350px;
+    grid-template-columns: 350px;
+    -ms-grid-rows: (70px)[6];
+    grid-template-rows: repeat(6, 70px);
+  }
+
+  .portfolio__grid {
+    -ms-grid-rows: 280px 20px 280px 20px 280px 20px 280px 20px 280px 20px 280px;
+    -ms-grid-columns: 280px;
+        grid-template: repeat(6, 280px)/280px;
+    gap: 20px;
+  }
+
+  .portfolio__grid .vertical,
+  .portfolio__grid .horizontal {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .price__grid {
+    -ms-grid-columns: 367px;
+    grid-template-columns: 367px;
+    -ms-grid-rows: (44px)[6];
+    grid-template-rows: repeat(6, 44px);
+  }
+
+  .contacts__wrapper {
+    padding: 0;
+  }
+
+  .contacts__photo {
+    display: none;
+  }
+
+  .contacts__form {
+    -ms-grid-columns: 280px;
+    grid-template-columns: 280px;
+    -ms-grid-rows: 45px 45px 190px 45px;
+    grid-template-rows: 45px 45px 190px 45px;
+  }
+
+  .contacts__form .contacts__textarea {
+    grid-column: auto;
+  }
+
+  .contacts__form .contacts__triggers {
+    grid-column: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+  }
+
+  .contacts__form .contacts__triggers .btn {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .contacts__form .contacts__triggers .contacts__policy {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+
+  .contacts__text {
+    font-size: 14px;
+  }
 }

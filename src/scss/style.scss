@@ -18,8 +18,10 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .divider {
@@ -39,3 +41,5 @@ body {
 @import "blocks/portfolio.scss";
 @import "blocks/price.scss";
 @import "blocks/contacts.scss";
+
+@import "base/media.scss";
